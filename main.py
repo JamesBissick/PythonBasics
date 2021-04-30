@@ -143,16 +143,28 @@ amazon_cart = [
 amazon_cart[3] = 'laptop'
 print(amazon_cart)
 # new_cart = amazon_cart # Modify the list
-new_cart = amazon_cart[:] # Copy the list
+new_cart = amazon_cart[:]  # Copy the list
 new_cart[0] = 'gum'
 print(new_cart)
 print(amazon_cart)
 
 # Matrix (Multidimentional Lists)
 matrix = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
 ]
 
 print(matrix[0][1])
+
+basket = [1, 2, 3, 4, 5]
+print(len(basket))
+basket.append(100)
+new_basket = basket
+print(new_basket)
+basket.remove(4)  # Works with the value we want to remove
+new_basket = basket
+print(new_basket)
+basket.pop(4)  # Works with the index we want to remove
+new_basket = basket
+print(new_basket)
