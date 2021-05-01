@@ -168,3 +168,30 @@ print(new_basket)
 basket.pop(4)  # Works with the index we want to remove
 new_basket = basket
 print(new_basket)
+
+# Range
+print(list(range(10)))  # Inside a list method it generates a list from 0 to 10
+
+# String Methods
+sentence = ['Hi!', 'My', 'name', 'is', 'Jack.']
+separator = ' '
+new_sentence = separator.join(sentence)
+print(new_sentence)
+
+# List unpacking
+a, b, c, *rest, x = [1, 2, 3, 4, 5, 6, 7, 8]
+print(a)
+print(b)
+print(c)
+print(x)
+print(rest)
+
+# Dictionary
+dictionary = {
+    1: [1, 2, 3],
+    2: 'x0fe',
+    3: 'x0ab'
+}
+
+print(dictionary[2])
+print(dictionary[1][1])
