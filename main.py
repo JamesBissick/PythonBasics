@@ -7,9 +7,9 @@ float
 bool
 str
 list
+dict
 tuple
 set
-dict
 '''
 
 # Classes -> custom types
@@ -186,7 +186,7 @@ print(c)
 print(x)
 print(rest)
 
-# Dictionary
+# Dictionary (keys has to be unique)
 dictionary = {
     1: [1, 2, 3],
     2: 'x0fe',
@@ -195,3 +195,22 @@ dictionary = {
 
 print(dictionary[2])
 print(dictionary[1][1])
+
+user2 = dict(name='Jack')
+print(user2)
+
+# Tuple (like immutable Lists)
+# If you don't need to modify a List, use a Tuple instead (more performance)
+my_tuple = (1, 2, 3, 4, 5)
+# my_tuple[1] = 'z'
+print(my_tuple.index(5))
+
+# Sets (unordered collection of unique objects)
+my_set = {1, 2, 3, 3, 4, 5, 5}
+my_set.add(2)  # wont add 2 because it already exists
+my_set.add(10)
+print(my_set)
+
+my_list = [1, 2, 3, 3, 4, 5, 5]
+print(set(my_list))  # remove duplicates
+print(1 in my_list)
